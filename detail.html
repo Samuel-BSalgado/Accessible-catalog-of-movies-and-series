@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles</title>
+</head>
+<body>
+  <header>
+    <button onclick="history.back()" aria-label="Volver al menú">⬅️ Volver</button>
+    <h1 id="movieTitle">Título de la Película/Serie</h1>
+  </header>
+  <main>
+    <section aria-labelledby="movieTitle">
+      <img src="ruta/imagen.jpg" alt="Portada de la Película/Serie">
+      <p id="movieDescription">Descripción de la película o serie...</p>
+      <video id="trailer" controls aria-label="Tráiler de la película o serie">
+        <source src="ruta/trailer.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+      </video>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
