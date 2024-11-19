@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #141414;
-  color: white;
+  color: #ffffff;
   padding: 20px;
 }
 
@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-  color: #e50914;
+  color: #e11822;
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
@@ -40,11 +40,11 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  padding: 8px 16px;
+  padding: 15px 16px;
   border-radius: 4px;
   transition: all 0.3s ease;
   position: relative;
@@ -57,7 +57,7 @@ nav a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #e50914;
+  background-color: #b10e16;
   transition: width 0.3s ease;
 }
 
@@ -66,8 +66,8 @@ nav a:hover::after {
 }
 
 nav a:hover {
-  background-color: rgba(229, 9, 20, 0.1);
-  color: #e50914;
+  background-color: #e509141a;
+  color: #b10e16;
 }
 
 #movies {
@@ -113,7 +113,7 @@ nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: #000000b3;
   padding: 10px;
   text-align: center;
 }
@@ -130,7 +130,7 @@ nav a:hover {
   max-width: 1200px;
   margin: 12px auto;
   border-collapse: collapse;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #00000080;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -138,11 +138,11 @@ nav a:hover {
 .stats-table th, .stats-table td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333333;
 }
 
 .stats-table th {
-  background-color: #e50914;
+  background-color: #b10e16;
 }
 
 #newsletter {
@@ -156,8 +156,8 @@ nav a:hover {
   max-width: 500px;
   margin: 0px auto;
   padding: 20px;
-  padding-right: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 47px;
+  background-color: #00000080;
   border-radius: 8px;
   text-align: left; 
 }
@@ -169,24 +169,32 @@ nav a:hover {
 .form-group label {
   display: block;
   margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .form-group input {
   width: 100%;
-  padding: 8px;
-  border: none;
+  padding: 12px;
   border-radius: 4px;
-  background-color: #333;
-  color: white;
+  background-color: #757575;
+  color: #ffffff;
+  font-size: medium;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-style: italic;
+  font-size: medium;
 }
 
 button {
-  background-color: #e50914;
-  color: white;
+  background-color: #b10e16;
+  color: #ffffff;
   font-weight: bold;
   font-size: medium;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
