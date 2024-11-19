@@ -9,7 +9,7 @@ const movies = [
     {
         id: 2,
         title: "The Dark Knight",
-        image: "images/the-dark-knight.jpg",
+        image: "images/the-dark-knight.webp",
         description: "Batman se enfrenta al Joker en una batalla por el alma de Ciudad Gótica.",
         trailer: "https://www.youtube.com/embed/EXeTwQWrcwY"
     },
@@ -23,21 +23,21 @@ const movies = [
     {
         id: 4,
         title: "The Matrix",
-        image: "images/matrix.jpg",
+        image: "images/matrix.webp",
         description: "Un hacker se da cuenta por medio de otros rebeldes de la naturaleza de su realidad y su rol en la guerra contra los controladores.",
         trailer: "https://www.youtube.com/embed/vKQi3bBA1y8"
     },
     {
         id: 5,
         title: "Pulp Fiction",
-        image: "images/pulp-fiction.jpg",
+        image: "images/pulp-fiction.webp",
         description: "Varias historias interconectadas de criminales en Los Ángeles.",
         trailer: "https://www.youtube.com/embed/s7EdQ4FqbhY"
     },
     {
         id: 6,
         title: "Venom",
-        image: "images/venom.jpg",
+        image: "images/venom.webp",
         description: "El periodista Eddie Brock desarrolla superpoderes después de ser vinculado con un simbionte alienígena que le da una violenta contraparte conocida como Venom.",
         trailer: "https://www.youtube.com/embed/u9Mv98Gr5pY"
     }
