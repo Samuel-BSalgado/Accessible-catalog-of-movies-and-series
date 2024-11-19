@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Película</title>
+    <link rel="stylesheet" href="movie-details-style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="window.location.href='index.html'">← Volver</button>
+        <div class="movie-details">
+            <div class="movie-poster">
+                <img id="movieImage" src="" alt="" onerror="this.src='images/placeholder.jpg'">
+            </div>
+            <div class="movie-info">
+                <h1 id="movieTitle"></h1>
+                <p id="movieDescription"></p>
+            </div>
+        </div>
+        <div class="trailer-container">
+            <iframe id="movieTrailer" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="movie-details-script.js"></script>
+</body>
+</html>
