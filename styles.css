@@ -130,6 +130,12 @@ nav a:hover {
   text-align: center;
 }
 
+figure {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 #stats {
   margin-top: 60px;
   max-width: 1200px;
