@@ -39,7 +39,7 @@ const movies = [
         title: "Venom",
         image: "images/venom.webp",
         description: "El periodista Eddie Brock desarrolla superpoderes después de ser vinculado con un simbionte alienígena que le da una violenta contraparte conocida como Venom.",
-        trailer: "https://www.youtube.com/embed/u9Mv98Gr5pY"
+        trailer: "https://www.youtube.com/embed/2_bwYRRqPcs"
     }
 ];
 
@@ -50,10 +50,8 @@ function loadMovies() {
         const movieCard = document.createElement('div');
         movieCard.className = 'movie-card';
         movieCard.innerHTML = `
-            <figure>
-                <img src="${movie.image}" alt="${movie.title}" onerror="this.src='images/placeholder.jpg'">
-                <div class="movie-title" style="font-weight: bold;">${movie.title}</div>
-            </figure>
+            <img src="${movie.image}" alt="${movie.title}" onerror="this.src='images/placeholder.jpg'">
+            <div class="movie-title" style="font-weight: bold;">${movie.title}</div>
         `;
         
         movieCard.addEventListener('click', () => {
