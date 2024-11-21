@@ -39,7 +39,7 @@ const movies = [
         title: "Venom",
         image: "images/venom.webp",
         description: "El periodista Eddie Brock desarrolla superpoderes después de ser vinculado con un simbionte alienígena que le da una violenta contraparte conocida como Venom.",
-        trailer: "https://www.youtube.com/embed/u9Mv98Gr5pY"
+        trailer: "https://www.youtube.com/embed/2_bwYRRqPcs"
     }
 ];
 
