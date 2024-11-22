@@ -8,20 +8,14 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header role="toolbar">
     <img src="images/cinema_logo.webp" alt="" class="logo" role="presentation">
     <h1>Cinema Plus</h1>
     <nav>
       <ul>
-        <li>
-          <a href="#movies">Películas</a>
-        </li>
-        <li>
-          <a href="#stats">Estadísticas</a>
-        </li>
-        <li>
-          <a href="https://www.imdb.com" target="_blank" aria-label="Abrir la página IMDb en una nueva pestaña">IMDb</a>
-        </li>
+        <li><a href="#movies">Películas</a></li>
+        <li><a href="#stats">Estadísticas</a></li>
+        <li><a href="https://www.imdb.com" target="_blank" aria-label="Abrir la página IMDb en una nueva pestaña">IMDb</a></li>
       </ul>
     </nav>
   </header>
@@ -45,51 +39,54 @@
 
   <article id="stats">
     <h3>Tabla de estadísticas de películas</h3>
-    <table class="stats-table">
+    <table class="stats-table" role="table">
       <thead>
-        <tr>
-          <th scope="col">Película</th>
-          <th scope="col">Año</th>
-          <th scope="col">Puntuación IMDb</th>
-          <th scope="col">Recaudación (Dólares americanos)</th>
+        <tr role="row">
+          <th scope="col" role="columnheader">Película</th>
+          <th scope="col" role="columnheader">Año</th>
+          <th scope="col" role="columnheader" aria-sort="none">Puntuación IMDb</th>
+          <th scope="col" role="columnheader">Recaudación (Dólares americanos)</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Inception</td>
-          <td>2010</td>
-          <td>8.8</td>
-          <td>836.8 Millones</td>
+        <tr role="row">
+          <td role="cell">Inception</td>
+          <td role="cell">2010</td>
+          <td role="cell">8.8</td>
+          <td role="cell">836.8 Millones</td>
         </tr>
-        <tr>
-          <td>The Dark Knight</td>
-          <td>2008</td>
-          <td>9.0</td>
-          <td>1,005 Millones</td>
+        <tr role="row">
+          <td role="cell">The Dark Knight</td>
+          <td role="cell">2008</td>
+          <td role="cell">9.0</td>
+          <td role="cell">
+            <span aria-hidden="true">1,005 Millones</span>
+            <span class="sr-only">Mil cinco millones</span>
+          </td>
         </tr>
-        <tr>
-          <td>Interstellar</td>
-          <td>2014</td>
-          <td>8.6</td>
-          <td>701.7 Millones</td>
+        <tr role="row">
+          <td role="cell">Interstellar</td>
+          <td role="cell">2014</td>
+          <td role="cell">8.6</td>
+          <td role="cell">701.7 Millones</td>
         </tr>
-        <tr>
-          <td>Matrix</td>
-          <td>1999</td>
-          <td>8.7</td>
-          <td>467 Millones</td>
+        <tr role="row">
+          <td role="cell">Matrix</td>
+          <td role="cell">1999</td>
+          <td role="cell">8.7</td>
+          <td role="cell">467 Millones</td>
         </tr>
-        <tr>
-          <td>Pulp Fiction</td>
-          <td>1994</td>
-          <td>8.6</td>
-          <td>213.9 Millones</td>
+        <tr role="row">
+          <td role="cell">Pulp Fiction</td>
+          <td role="cell">1994</td>
+          <td role="cell">8.6</td>
+          <td role="cell">213.9 Millones</td>
         </tr>
-        <tr>
-          <td>Venom</td>
-          <td>2018</td>
-          <td>6.6</td>
-          <td>856 Millones</td>
+        <tr role="row">
+          <td role="cell">Venom</td>
+          <td role="cell">2018</td>
+          <td role="cell">6.6</td>
+          <td role="cell">856 Millones</td>
         </tr>
       </tbody>
     </table>
