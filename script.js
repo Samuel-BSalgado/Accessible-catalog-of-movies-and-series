@@ -11,7 +11,7 @@ const movies = [
         title: "The Dark Knight",
         image: "images/the-dark-knight.webp",
         description: "Batman se enfrenta al Joker en una batalla por el alma de Ciudad Gótica.",
-        trailer: "https://www.youtube.com/embed/EXeTwQWrcwY"
+        trailer: "https://www.youtube.com/embed/R6phtZUh9sc"
     },
     {
         id: 3,
