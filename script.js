@@ -4,7 +4,7 @@ const movies = [
         title: "Inception",
         image: "images/inception.webp",
         description: "Un ladrón experto en el arte de la extracción de información durante el estado del sueño.",
-        trailer: "https://www.youtube.com/embed/YoHD9XEInc0"
+        trailer: "https://www.youtube.com/embed/Nj_aSTfhUyM"
     },
     {
         id: 2,
