@@ -25,7 +25,7 @@ const movies = [
         title: "The Matrix",
         image: "images/matrix.webp",
         description: "Un hacker se da cuenta por medio de otros rebeldes de la naturaleza de su realidad y su rol en la guerra contra los controladores.",
-        trailer: "https://www.youtube.com/embed/vKQi3bBA1y8"
+        trailer: "https://www.youtube.com/embed/jeJ1EDIfYEI"
     },
     {
         id: 5,
