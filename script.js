@@ -18,7 +18,7 @@ const movies = [
         title: "Interstellar",
         image: "images/interstellar.webp",
         description: "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.",
-        trailer: "https://www.youtube.com/embed/zSWdZVtXT7E"
+        trailer: "https://www.youtube.com/embed/r6NQw3dtIUQ"
     },
     {
         id: 4,
