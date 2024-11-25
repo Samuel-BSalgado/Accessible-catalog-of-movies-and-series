@@ -32,7 +32,7 @@ const movies = [
         title: "Pulp Fiction",
         image: "images/pulp-fiction.webp",
         description: "Varias historias interconectadas de criminales en Los Ángeles.",
-        trailer: "https://www.youtube.com/embed/s7EdQ4FqbhY"
+        trailer: "https://www.youtube.com/embed/ZRkbkh5VAis"
     },
     {
         id: 6,
