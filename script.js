@@ -3,42 +3,42 @@ const movies = [
         id: 1,
         title: "Inception",
         image: "images/inception.webp",
-        description: "Un ladrón experto en el arte de la extracción de información durante el estado del sueño.",
+        description: "Un ladrón especializado en robar secretos de los sueños acepta implantar una idea en la mente de su objetivo, enfrentándose a los peligros de la mente subconsciente.",
         trailer: "https://www.youtube.com/embed/Nj_aSTfhUyM"
     },
     {
         id: 2,
         title: "The Dark Knight",
         image: "images/the-dark-knight.webp",
-        description: "Batman se enfrenta al Joker en una batalla por el alma de Ciudad Gótica.",
+        description: "Batman enfrenta al caótico Joker, un enemigo que pone a prueba sus límites y amenaza con desestabilizar Gotham en esta emocionante obra de Christopher Nolan.",
         trailer: "https://www.youtube.com/embed/R6phtZUh9sc"
     },
     {
         id: 3,
         title: "Interstellar",
         image: "images/interstellar.webp",
-        description: "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.",
+        description: "Un grupo de exploradores viaja a través de un agujero de gusano para buscar un nuevo hogar para la humanidad en una épica aventura de ciencia ficción.",
         trailer: "https://www.youtube.com/embed/r6NQw3dtIUQ"
     },
     {
         id: 4,
         title: "The Matrix",
         image: "images/matrix.webp",
-        description: "Un hacker se da cuenta por medio de otros rebeldes de la naturaleza de su realidad y su rol en la guerra contra los controladores.",
+        description: "Un programador descubre la verdad sobre su realidad y lidera una rebelión contra un sistema de inteligencia artificial que controla a la humanidad.",
         trailer: "https://www.youtube.com/embed/jeJ1EDIfYEI"
     },
     {
         id: 5,
         title: "Pulp Fiction",
         image: "images/pulp-fiction.webp",
-        description: "Varias historias interconectadas de criminales en Los Ángeles.",
+        description: "Historias entrelazadas de gánsteres, boxeadores y criminales en un clásico de Quentin Tarantino lleno de humor oscuro y diálogos inolvidables.",
         trailer: "https://www.youtube.com/embed/ZRkbkh5VAis"
     },
     {
         id: 6,
         title: "Venom",
         image: "images/venom.webp",
-        description: "El periodista Eddie Brock desarrolla superpoderes después de ser vinculado con un simbionte alienígena que le da una violenta contraparte conocida como Venom.",
+        description: "El periodista Eddie Brock se convierte en anfitrión de un simbionte alienígena que le da una violenta contraparte conocida como Venom, generando poderes increíbles mientras lucha contra enemigos que quieren controlar al simbionte.",
         trailer: "https://www.youtube.com/embed/2_bwYRRqPcs"
     }
 ];
