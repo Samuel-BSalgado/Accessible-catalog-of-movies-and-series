@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header role="toolbar">
+  <div id="header" role="toolbar">
     <img src="images/cinema_logo.webp" alt="" class="logo" role="presentation">
     <h1>Cinema Plus</h1>
     <nav>
@@ -18,7 +18,7 @@
         <li><a href="https://www.imdb.com" target="_blank" aria-label="Abrir la página IMDb en una nueva pestaña">IMDb</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
 
   <section class="about-section">
     <h2>Bienvenidos a Cinema Plus</h2>
@@ -39,57 +39,58 @@
 
   <article id="stats">
     <h3>Tabla de estadísticas de películas</h3>
-    <table class="stats-table" role="table">
-      <thead>
-        <tr role="row">
-          <th scope="col" role="columnheader">Película</th>
-          <th scope="col" role="columnheader">Año</th>
-          <th scope="col" role="columnheader">Puntuación IMDb</th>
-          <th scope="col" role="columnheader">Recaudación (Dólares americanos)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr role="row">
-          <td role="cell">Inception</td>
-          <td role="cell">2010</td>
-          <td role="cell">8.8</td>
-          <td role="cell">836.8 Millones</td>
-        </tr>
-        <tr role="row">
-          <td role="cell">The Dark Knight</td>
-          <td role="cell">2008</td>
-          <td role="cell">9.0</td>
-          <td role="cell">
-            <span aria-hidden="true">1,005 Millones</span>
-            <span class="sr-only">Mil cinco millones</span>
-          </td>
-        </tr>
-        <tr role="row">
-          <td role="cell">Interstellar</td>
-          <td role="cell">2014</td>
-          <td role="cell">8.6</td>
-          <td role="cell">701.7 Millones</td>
-        </tr>
-        <tr role="row">
-          <td role="cell">Matrix</td>
-          <td role="cell">1999</td>
-          <td role="cell">8.7</td>
-          <td role="cell">467 Millones</td>
-        </tr>
-        <tr role="row">
-          <td role="cell">Pulp Fiction</td>
-          <td role="cell">1994</td>
-          <td role="cell">8.6</td>
-          <td role="cell">213.9 Millones</td>
-        </tr>
-        <tr role="row">
-          <td role="cell">Venom</td>
-          <td role="cell">2018</td>
-          <td role="cell">6.6</td>
-          <td role="cell">856 Millones</td>
-        </tr>
-      </tbody>
-    </table>
+      <div role="table" aria-label="Películas" aria-describedby="movies_table_desc"
+         style="border: 1px solid #000000; border-radius: 8px; overflow: hidden; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
+        <div role="rowgroup" style="background-color: #b10e16;">
+          <div role="row" style="display: flex; font-weight: bold; padding: 10px; border-bottom: 1px solid #dddddd;">
+            <span role="columnheader" style="flex: 2;">Película</span>
+            <span role="columnheader" style="flex: 1;">Año</span>
+            <span role="columnheader" style="flex: 1;">Puntuación IMDb</span>
+            <span role="columnheader" style="flex: 2;">Recaudación</span>
+          </div>
+        </div>
+        <div role="rowgroup">
+          <div role="row" style="display: flex; padding: 10px; border-bottom: 1px solid #eeeeee;">
+            <span role="cell" style="flex: 2;">Inception</span>
+            <span role="cell" style="flex: 1;">2010</span>
+            <span role="cell" style="flex: 1;">8.8</span>
+            <span role="cell" style="flex: 2;">836.8 Millones</span>
+          </div>
+          <div role="row" style="display: flex; padding: 10px; border-bottom: 1px solid #eeeeee;">
+            <span role="cell" style="flex: 2;">The Dark Knight</span>
+            <span role="cell" style="flex: 1;">2008</span>
+            <span role="cell" style="flex: 1;">9.0</span>
+            <span role="cell" style="flex: 2;">
+              <span aria-hidden="true">1,005 Millones</span>
+              <span class="sr-only">Mil cinco millones</span>
+            </span>
+          </div>
+          <div role="row" style="display: flex; padding: 10px; border-bottom: 1px solid #eeeeee;">
+            <span role="cell" style="flex: 2;">Interstellar</span>
+            <span role="cell" style="flex: 1;">2014</span>
+            <span role="cell" style="flex: 1;">8.6</span>
+            <span role="cell" style="flex: 2;">701.7 Millones</span>
+          </div>
+          <div role="row" style="display: flex; padding: 10px; border-bottom: 1px solid #eeeeee;">
+            <span role="cell" style="flex: 2;">Matrix</span>
+            <span role="cell" style="flex: 1;">1999</span>
+            <span role="cell" style="flex: 1;">8.7</span>
+            <span role="cell" style="flex: 2;">467 Millones</span>
+          </div>
+          <div role="row" style="display: flex; padding: 10px; border-bottom: 1px solid #eeeeee;">
+            <span role="cell" style="flex: 2;">Pulp Fiction</span>
+            <span role="cell" style="flex: 1;">1994</span>
+            <span role="cell" style="flex: 1;">8.6</span>
+            <span role="cell" style="flex: 2;">213.9 Millones</span>
+          </div>
+          <div role="row" style="display: flex; padding: 10px;">
+            <span role="cell" style="flex: 2;">Venom</span>
+            <span role="cell" style="flex: 1;">2018</span>
+            <span role="cell" style="flex: 1;">6.6</span>
+            <span role="cell" style="flex: 2;">856 Millones</span>
+          </div>
+        </div>
+      </div>
   </article>
 
   <footer id="newsletter">
