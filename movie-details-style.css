@@ -27,6 +27,20 @@ body {
   font-size: 16px;
 }
 
+#movieTitle {
+  line-height: 1.5;
+  margin-bottom: 2em;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+}
+
+#movieDescription {
+  line-height: 1.5;
+  margin-bottom: 2em;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+}
+
 .movie-details {
   display: grid;
   grid-template-columns: 1fr 2fr;
