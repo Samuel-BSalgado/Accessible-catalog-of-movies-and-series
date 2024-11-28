@@ -288,3 +288,7 @@ button {
   white-space: nowrap;
   border: 0;
 }
+
+footer h2 {
+  font-size: large;
+}
