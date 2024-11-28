@@ -60,7 +60,7 @@ function loadMovies() {
         const movieCard = document.createElement('div');
         movieCard.className = 'movie-card';
         movieCard.innerHTML = `
-            <img src="${movie.image}" alt="${movie.title}" onerror="this.src='images/placeholder.jpg'">
+            <img src="${movie.image}" alt="" onerror="this.src='images/placeholder.jpg'">
             <div class="movie-title" style="font-weight: bold;">${movie.title}</div>
         `;
         
