@@ -1,3 +1,13 @@
+function goToLink(event, url) {
+    if (event.type === 'click' || (event.type === 'keydown' && (event.key === 'Enter' || event.key === ' '))) {
+      if (url.startsWith('#')) {
+        document.querySelector(url).scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.open(url, '_blank');
+      }
+    }
+  }
+
 const movies = [
     {
         id: 1,
