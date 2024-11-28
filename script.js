@@ -61,7 +61,7 @@ function loadMovies() {
         movieCard.className = 'movie-card';
         movieCard.innerHTML = `
             <img src="${movie.image}" alt="" onerror="this.src='images/placeholder.jpg'">
-            <div class="movie-title" style="font-weight: bold;">${movie.title}</div>
+            <div role="link" tabindex="0" class="movie-title" style="font-weight: bold;">${movie.title}</div>
         `;
         
         movieCard.addEventListener('click', () => {
