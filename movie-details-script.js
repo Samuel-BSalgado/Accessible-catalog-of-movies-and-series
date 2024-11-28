@@ -4,7 +4,7 @@ function loadMovieDetails() {
   if (movieData) {
       document.title = `${movieData.title} - Detalles`;
       document.getElementById('movieImage').src = movieData.image;
-      document.getElementById('movieImage').alt = movieData.title;
+      document.getElementById('movieImage').alt = movieData.alt;
       document.getElementById('movieTitle').textContent = movieData.title;
       document.getElementById('movieDescription').textContent = movieData.description;
       document.getElementById('movieTrailer').src = movieData.trailer;
