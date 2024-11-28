@@ -8,14 +8,32 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header id="header" role="toolbar">
+  <header id="header">
     <img src="images/cinema_logo.webp" alt="" class="logo" role="presentation">
     <h1>Cinema Plus</h1>
     <nav>
       <ul>
-        <li><a href="#movies">Películas</a></li>
-        <li><a href="#stats">Estadísticas</a></li>
-        <li><a href="https://www.imdb.com" target="_blank">IMDb</a></li>
+        <li>
+          <span id="link" tabindex="0" role="link" 
+            onclick="goToLink(event, '#movies')" 
+            onkeydown="goToLink(event, '#movies')">
+            Películas
+          </span>
+        </li>
+        <li>
+          <span id="link" tabindex="0" role="link" 
+                onclick="goToLink(event, '#stats')" 
+                onkeydown="goToLink(event, '#stats')">
+            Estadísticas
+          </span>
+        </li>
+        <li>
+          <span id="link" tabindex="0" role="link" 
+                onclick="goToLink(event, 'https://www.imdb.com')" 
+                onkeydown="goToLink(event, 'https://www.imdb.com')">
+            IMDb
+          </span>
+        </li>
       </ul>
     </nav>
   </header>
