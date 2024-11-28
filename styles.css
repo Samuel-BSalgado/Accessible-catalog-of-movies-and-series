@@ -50,7 +50,7 @@ nav li {
   padding: 0;
 }
 
-nav a {
+nav #link {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
@@ -61,7 +61,7 @@ nav a {
   position: relative;
 }
 
-nav a::after {
+nav #link::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -72,13 +72,15 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+nav #link:hover::after {
+  cursor: pointer;
   width: 100%;
 }
 
-nav a:hover {
+nav #link:hover {
   background-color: #e509141a;
   color: #b10e16;
+  cursor: pointer;
 }
 
 #movies {
