@@ -85,15 +85,23 @@ nav .link:hover {
 }
 
 #first_link {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #second_link {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #IMDb {
   cursor: pointer;
+}
+
+#IMDb img {
+  height: 40px;
+}
+
+#imdb-div {
+  margin-top: 4px;
 }
 
 #welcome {
