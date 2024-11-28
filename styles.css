@@ -51,7 +51,7 @@ nav li {
   letter-spacing: 0.12em;
 }
 
-nav #link {
+nav .link {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
@@ -62,7 +62,7 @@ nav #link {
   position: relative;
 }
 
-nav #link::after {
+nav .link::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -73,12 +73,12 @@ nav #link::after {
   transition: width 0.3s ease;
 }
 
-nav #link:hover::after {
+nav .link:hover::after {
   cursor: pointer;
   width: 100%;
 }
 
-nav #link:hover {
+nav .link:hover {
   background-color: #e509141a;
   color: #b10e16;
   cursor: pointer;
@@ -287,4 +287,8 @@ button {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+footer h2 {
+  font-size: large;
 }
