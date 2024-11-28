@@ -7,6 +7,38 @@
   <link rel="stylesheet" href="movie-details-style.css">
 </head>
 <body>
+  <header id="header">
+    <img src="images/cinema_logo.webp" alt="" class="logo" role="presentation">
+    <h1>Cinema Plus</h1>
+    <nav>
+      <ul>
+        <li id="first_link">
+          <span class="link" tabindex="0" role="link"
+            onclick="goToLink(event, '#movies')" 
+            onkeydown="goToLink(event, '#movies')">
+            Películas
+          </span>
+        </li>
+        <li id="second_link">
+          <span class="link" tabindex="0" role="link"
+                onclick="goToLink(event, '#stats')" 
+                onkeydown="goToLink(event, '#stats')">
+            Estadísticas
+          </span>
+        </li>
+        <li>
+          <div>
+            <span tabindex="0" role="link" id="IMDb" aria-label="IMDb"
+            onclick="goToLink(event, 'https://www.imdb.com')" 
+            onkeydown="goToLink(event, 'https://www.imdb.com')">
+            <img src="./images/IMDb.svg" alt="">
+          </span>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
   <div class="container">
     <button class="back-button" onclick="window.location.href='index.html'">← Volver</button>
     <div class="movie-details">
