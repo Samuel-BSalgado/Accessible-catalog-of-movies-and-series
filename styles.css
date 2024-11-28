@@ -84,6 +84,18 @@ nav .link:hover {
   cursor: pointer;
 }
 
+#first_link {
+  margin-top: 20px;
+}
+
+#second_link {
+  margin-top: 20px;
+}
+
+#IMDb {
+  cursor: pointer;
+}
+
 #welcome {
   line-height: 1.5;
   letter-spacing: 0.12em;
