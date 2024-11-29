@@ -74,6 +74,13 @@ function loadMovies() {
             localStorage.setItem('selectedMovie', JSON.stringify(movie));
             window.location.href = 'movie-details.html';
         });
+
+        movieCard.querySelector('.movie-title').addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                localStorage.setItem('selectedMovie', JSON.stringify(movie));
+                window.location.href = 'movie-details.html';
+            }
+        });
         
         container.appendChild(movieCard);
     });

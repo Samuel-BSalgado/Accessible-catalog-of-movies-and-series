@@ -15,7 +15,6 @@ function goToDescriptiveAudio(event, url) {
   if (event.type === 'click' || (event.type === 'keydown' && (event.key === 'Enter' || event.key === ' '))) {
     window.open(url, '_blank');
   }
-  console.log("olo");
 }
 
 function loadMovieDetails() {
