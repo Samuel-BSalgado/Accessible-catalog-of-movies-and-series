@@ -183,6 +183,16 @@ body {
   border: none;
 }
 
+figure {
+  margin-bottom: 20px;
+}
+
+#descriptive-audio {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #7A9CFF;
+}
+
 @media (max-width: 768px) {
   .movie-details {
       grid-template-columns: 1fr;
