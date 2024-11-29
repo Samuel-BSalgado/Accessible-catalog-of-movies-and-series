@@ -43,17 +43,23 @@
     <div class="container">
       <button class="back-button" onclick="window.location.href='index.html'">← Volver</button>
       <div class="movie-details">
-        <div class="movie-poster">
-          <img id="movieImage" src="" alt="" onerror="this.src='images/placeholder.jpg'">
-        </div>
-        <div class="movie-info">
-          <h2 id="movieTitle"></h2>
-          <p id="movieDescription"></p>
-        </div>
+        <aside>
+          <div class="movie-poster">
+            <img id="movieImage" src="" alt="" onerror="this.src='images/placeholder.jpg'">
+          </div>
+        </aside>
+        <article>
+          <div class="movie-info">
+            <h2 id="movieTitle"></h2>
+            <p id="movieDescription"></p>
+          </div>
+        </article>
       </div>
-      <div class="trailer-container">
-        <iframe id="movieTrailer" allowfullscreen title="Video tráiler de la película"></iframe>
-      </div>
+      <figure>
+        <div class="trailer-container">
+          <iframe id="movieTrailer" allowfullscreen title="Video tráiler de la película"></iframe>
+        </div>
+      </figure>
     </div>
   </main>
   <script src="movie-details-script.js"></script>
