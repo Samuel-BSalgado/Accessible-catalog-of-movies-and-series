@@ -2,6 +2,9 @@ function goToLink(event, url) {
   if (event.type === 'click' || (event.type === 'keydown' && (event.key === 'Enter' || event.key === ' '))) {
     if (url.startsWith('#')) {
       document.querySelector(url).scrollIntoView({ behavior: 'smooth' });
+    } else if (url.includes('.html#')) {
+      const [page, section] = url.split('#');
+      window.location.href = `${page}#${section}`;
     } else {
       window.open(url, '_blank');
     }
