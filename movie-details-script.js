@@ -11,9 +11,32 @@ function goToLink(event, url) {
   }
 }
 
-function goToDescriptiveAudio(event, url) {
+function goToDescriptiveAudio(event) {
   if (event.type === 'click' || (event.type === 'keydown' && (event.key === 'Enter' || event.key === ' '))) {
-    window.open(url, '_blank');
+    const movieData = JSON.parse(localStorage.getItem('selectedMovie'));
+
+    if (movieData) {
+      //Convertir el titulo de la pelicula a un nombre de archivo compatible
+      const formattedTitle = movieData.title
+        .replace(/\s+/g, '_') // Reemplazar espacios con guiones bajos
+        .replace(/[^a-zA-Z0-9_]/g, '') // Eliminar caracteres especiales
+        .toUpperCase(); // Convertir a mayúsculas
+      
+        const audioDescriptionUrl = `audio_description_${formattedTitle}.html`;
+
+        //Verificar que el archivo exista antes de abrirlo
+        fetch(audioDescriptionUrl)
+          .then(response => {
+            if (response.ok) {
+              window.open(audioDescriptionUrl, '_blank');
+            } else {
+              alert('Lo sentimos, el audio descriptivo para esta película aún no está disponible.');
+            }
+          })
+          .catch(() => {
+            alert('Lo sentimos, el audio descriptivo para esta película aún no está disponible.');
+          });
+    }
   }
 }
 
