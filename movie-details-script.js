@@ -30,11 +30,11 @@ function goToDescriptiveAudio(event) {
             if (response.ok) {
               window.open(audioDescriptionUrl, '_blank');
             } else {
-              alert('Lo sentimos, el audio descriptivo para esta película aún no está disponible.');
+              alert('Lo sentimos, el audio descriptivo para esta película aún está en desarrollo.');
             }
           })
           .catch(() => {
-            alert('Lo sentimos, el audio descriptivo para esta película aún no está disponible.');
+            alert('Lo sentimos, el audio descriptivo para esta película aún está en desarrollo.');
           });
     }
   }
